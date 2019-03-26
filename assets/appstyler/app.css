@@ -1,0 +1,75 @@
+#app {
+  display: grid;
+  grid: "menuBar menuBar menuBar menuBar" auto
+    "activityBar sideBarLeft main sideBarRight" 1fr
+    "statusBar statusBar statusBar statusBar" auto
+    / auto auto 1fr auto;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  -moz-user-select: none;
+}
+
+#menuBar {
+  background-color: #353e47;
+  grid-area: menuBar;
+  height: 25px;
+}
+
+#activityBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: activityBar;
+  list-style: none;
+  padding: .2em 0;
+  margin: 0;
+  width: 42px;
+  background-color: #2c353e;
+  color: #88b4e7;
+}
+
+#activityBar li{
+  margin: .5em 0;
+}
+
+#sideBarLeft {
+  width: 260px;
+  background-color: #1e2730;
+  grid-area: sideBarLeft;
+}
+
+#sideBarRight {
+  width: 288px;
+  background-color: #1e2730;
+  background-image: url('./img/sidebarRight.png');
+  grid-area: sideBarRight;
+}
+
+#editor {
+  background-color: #172029;
+  grid-area: main;
+  padding: 1rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color:  #2c353e #172029;
+}
+
+#statusBar {
+  background-color: #576069;
+  grid-area: statusBar;
+  height: 20px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+my-icon{
+  background: #588960;
+  color: #1961b3;
+}
+my-icon:hover{
+  background: #39ff5a;
+}

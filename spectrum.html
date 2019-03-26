@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de" class="spectrum--medium">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./assets/spectrum-core.css" data-spectrum-core>
+  <link rel="stylesheet" type="text/css" href="./assets/spectrum-light.css">
+  <link rel="stylesheet" type="text/css" href="./assets/spectrum-dark.css">
+  <script src="./elements/my-counter.js"></script>
+  <script src="./elements/my-title.js"></script>
+  <script src="./elements/my-icon.js"></script>
+  
+  <script src="./elements/spectrum-button.js"></script>
+
+  <style>
+    .my-counter-styled {
+      --bg-color: lime;
+      --btn-bg-color: #47b747;
+      --btn-color: white;
+      --btn-box-shadow: 3px 0 8px rgba(108,138,51,1);
+    }
+  </style>
+  </head>
+
+  <body class="spectrum spectrum--light">
+    
+    <div class="spectrum-SplitView spectrum-SplitView--horizontal" style="min-height: 200px">
+      <div class="spectrum-SplitView-pane" style="width: 304px">
+        
+        <nav>
+          
+          <ul class="spectrum-SideNav">
+            <li class="spectrum-SideNav-item is-selected">
+              <!-- aria-current denotes current "page" or "location" -->
+              <a href="#" class="spectrum-SideNav-itemLink" aria-current="page">Section 1</a>
+            </li>
+            <li class="spectrum-SideNav-item">
+              <a href="#" class="spectrum-SideNav-itemLink">Section 2</a>
+            </li>
+            <li class="spectrum-SideNav-item">
+              <h2 class="spectrum-SideNav-heading" id="nav-heading-category-1">Category 1</h2>
+              <ul class="spectrum-SideNav" aria-labelledby="nav-heading-category-1">
+                <li class="spectrum-SideNav-item">
+                  <a href="#" class="spectrum-SideNav-itemLink">Section 3</a>
+                </li>
+                <li class="spectrum-SideNav-item">
+                  <a href="#" class="spectrum-SideNav-itemLink">Section 4</a>
+                </li>
+              </ul>
+            </li>
+            <li class="spectrum-SideNav-item">
+              <h2 class="spectrum-SideNav-heading" id="nav-heading-category-2">Category 2</h2>
+              <ul class="spectrum-SideNav" aria-labelledby="nav-heading-category-2">
+                <li class="spectrum-SideNav-item">
+                  <a href="#" class="spectrum-SideNav-itemLink">Section 5</a>
+                </li>
+                <li class="spectrum-SideNav-item">
+                  <a href="#" class="spectrum-SideNav-itemLink">Section 6</a>
+                </li>
+                <li class="spectrum-SideNav-item">
+                  <a href="#" class="spectrum-SideNav-itemLink">Section 7</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      
+      </div>
+      <div class="spectrum-SplitView-splitter"></div>
+      <div class="spectrum-SplitView-pane" style="flex: 1">
+        
+        <spectrum-button></spectrum-button>
+
+        <button class="spectrum-ActionButton">
+          <span class="spectrum-ActionButton-label">Edit</span>
+        </button>
+        <button class="spectrum-ActionButton is-selected">
+          <span class="spectrum-ActionButton-label">Edit</span>
+        </button>
+        <button class="spectrum-ActionButton" disabled>
+          <span class="spectrum-ActionButton-label">Edit</span>
+        </button>
+        <button class="spectrum-ActionButton is-selected" disabled>
+          <span class="spectrum-ActionButton-label">Edit</span>
+        </button>
+        
+        <br><br>
+        
+        <button class="spectrum-ActionButton">
+          <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Edit">
+            <use xlink:href="./assets/spectrum-icons.svg#spectrum-icon-18-Edit" />
+          </svg>
+          <span class="spectrum-ActionButton-label">Edit</span>
+        </button>
+        <button class="spectrum-ActionButton is-selected">
+          <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Edit">
+            <use xlink:href="./assets/spectrum-icons.svg#spectrum-icon-18-Edit" />
+          </svg>
+          <span class="spectrum-ActionButton-label">Edit</span>
+        </button>
+        <button class="spectrum-ActionButton" disabled>
+          <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Edit">
+            <use xlink:href="./assets/spectrum-icons.svg#spectrum-icon-18-Edit" />
+          </svg>
+          <span class="spectrum-ActionButton-label">Edit</span>
+        </button>
+        <button class="spectrum-ActionButton is-selected" disabled>
+          <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Edit">
+            <use xlink:href="./assets/spectrum-icons.svg#spectrum-icon-18-Edit" />
+          </svg>
+          <span class="spectrum-ActionButton-label">Edit</span>
+        </button>
+      
+      </div>
+    </div>
+
+    
+
+
+
+
+    
+    
+
+  </body>
+  <!--
+    <h4>Readings</h4>
+    <ul>
+      <li><a href="https://www.smashingmagazine.com/2018/07/reusable-components-custom-elements-shadow-dom-npm/">The Holy Grail Of Reusable Components: Custom Elements, Shadow DOM, And NPM</a></li>
+      <li><a href="https://medium.freecodecamp.org/how-to-use-es6-modules-and-why-theyre-important-a9b20b480773">A Practical guide to ES6 modules</a></li>
+      <li><a href="https://alligator.io/web-components/styling-custom-elements/">Styling Your Custom Elements</a></li>
+    </ul>
+
+    <h4>Inspiration</h4>
+    <ul>
+      <li><a href="http://opensource.adobe.com/spectrum-css/2.8.0/docs/">Adobe Spectrum</a></li>
+    </ul>
+
+  -->
+</html>
