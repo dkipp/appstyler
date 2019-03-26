@@ -56,6 +56,20 @@
   scrollbar-color:  #2c353e #172029;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+ 
+::-webkit-scrollbar-track {
+  background: #172029;
+}
+ 
+#editor::-webkit-scrollbar-thumb {
+  background: #2c353e;
+  border-right: 1px solid #172029;
+}
+
+
 #statusBar {
   background-color: #576069;
   grid-area: statusBar;
