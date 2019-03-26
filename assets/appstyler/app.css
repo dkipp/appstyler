@@ -81,9 +81,9 @@
 }
 
 my-icon{
-  background: #588960;
-  color: #1961b3;
+  background: var(--color-text-link);
+  color: #FFF;
 }
 my-icon:hover{
-  background: #39ff5a;
+  background:var(--color-text-default);
 }
