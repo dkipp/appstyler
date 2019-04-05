@@ -12,9 +12,11 @@
 }
 
 #menuBar {
+  z-index: 100;
   background-color: #353e47;
   grid-area: menuBar;
   height: 25px;
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
 }
 
 #activityBar {
@@ -45,15 +47,18 @@
   background-color: #1e2730;
   background-image: url('./img/sidebarRight.png');
   grid-area: sideBarRight;
+  
 }
 
 #editor {
+  z-index: 50;
   background-color: #172029;
   grid-area: main;
   padding: 1rem;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color:  #2c353e #172029;
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
 }
 
 ::-webkit-scrollbar {
@@ -74,6 +79,7 @@
   background-color: #576069;
   grid-area: statusBar;
   height: 20px;
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
 }
 
 .hidden {
